@@ -7,9 +7,10 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <EditText
+            android:inputType="textWebEmailAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Rapla Link einfügen"
+            android:hint="Rapla Link einfügen"
             android:ems="10"
             android:id="@+id/inputRaplaLink"
             app:layout_constraintStart_toStartOf="parent"
