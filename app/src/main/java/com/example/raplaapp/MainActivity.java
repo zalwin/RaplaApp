@@ -8,15 +8,15 @@ import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Map<Integer, Vorlesung> Vorlesungen = new HashMap<>()
+//    public Map<Integer, Vorlesung> Vorlesungen = new HashMap<>()
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.rapla_table);
     }
 
-
+/*
     private static void parseIncommingStringInList(String inCommingString) {
         String[] inhaltSplitted = inCommingString.split("\n");
 
@@ -216,4 +216,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+
+ */
 }

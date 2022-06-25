@@ -1,3 +1,4 @@
+/*
 import jdk.tools.jmod.Main;
 
 public class Vorlesung extends MainActivity {
@@ -66,3 +67,4 @@ public class Vorlesung extends MainActivity {
         return endzeit;
     }
 }
+*/
