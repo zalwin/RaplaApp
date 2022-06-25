@@ -3,18 +3,36 @@ package com.example.raplaapp;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-import java.util.HashMap;
-import java.util.Map;
+
+import android.content.Intent;
+import android.net.Uri;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
 //    public Map<Integer, Vorlesung> Vorlesungen = new HashMap<>()
-    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        Button submitURLButton;
+        EditText insertURLText;
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.rapla_table);
+        setContentView(R.layout.activity_main);
+        submitURLButton = findViewById(R.id.submitURL);
+        insertURLText = findViewById(R.id.inputRaplaLink);
+        submitURLButton.setOnClickListener(view -> {
+            String url = insertURLText.getText().toString();
+            if (!url.startsWith("https://")) {
+                url = "https://" + url;
+            }
+            setContentView(R.layout.rapla_table);
+        });
     }
+}
 
 /*
     private static void parseIncommingStringInList(String inCommingString) {
@@ -218,4 +236,3 @@ public class MainActivity extends AppCompatActivity {
     }
 
  */
-}
